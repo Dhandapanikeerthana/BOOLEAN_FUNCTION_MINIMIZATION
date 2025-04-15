@@ -1,5 +1,6 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
-
+## DEVELOPED BY: KEERTHANA D
+## REG NO: 212224040155
 **AIM:**
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
@@ -33,22 +34,33 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+ module funct1(a,b,c,d,f1);
+ input a,b,c,d;
+ output f1;
+ assign f1=((~b&~d)|(~a&b&d)|(a&b&~c));
+ endmodule
 
-Developed by:D.KEERTHANA RegisterNumber: 212224040155
-
-
+module funct2(w,x,y,z,f2);
+ input w,x,y,z;
+ output f2;
+ assign f2=((~y&z)|(w&y)|(x&y));
+ endmodule
 
 
 **RTL realization**
 
 **Output:**
-![Screenshot (27)](https://github.com/user-attachments/assets/c10618de-962f-4c1c-99b1-0c2e89dc6989)
-![Screenshot (28)](https://github.com/user-attachments/assets/6df5c362-6215-45db-b193-d8a169db567a)
 
 **RTL**
+![Screenshot (35)](https://github.com/user-attachments/assets/c010beae-2847-4284-8c7a-b99ebbd6196f)
+![Screenshot (37)](https://github.com/user-attachments/assets/024b7397-3d3a-4a16-94b5-6fa8195e11a8)
+
 
 **Timing Diagram**
+![Screenshot (36)](https://github.com/user-attachments/assets/bdc69d9f-8243-4c78-ab8f-5b56f33235ca)
+![Screenshot (38)](https://github.com/user-attachments/assets/ab51c130-467b-4abf-9527-44ac3a4ac32f)
+
+
 
 **Result:**
 
